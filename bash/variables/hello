@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Declare the variable
+name="World"
+files="*.txt"
+message="Hello,      spaced      World!"
+
+# Call the variable with proper expansion
+echo "===Example 1==="
+echo "This is a variable being called using double quotes, which expands a the variables properly."
+echo "Hello, ${name}"
+# Call the variable with literal text and no expansion
+echo "This is a variable being called using single quotes, which prints literal text."
+echo 'Hello, $name'
+echo ' '
+
+# Call the variable without quotes, which collapses spaces
+echo "===Example 2==="
+echo "This is a variable being called without quotes, which collapses spaces."
+echo $message
+echo "Whereas adding double qoutes preserves the spaces"
+echo "$message"
+echo ' '
+
+# Call variables without spaces, which does glob expansion
+echo "===Example 3==="
+echo "This is a variable 'files=*.txt' being called without quotes, which does glob expansion"
+echo $files
+echo "Where as this variable uses quotes, which expands literal"
+echo "$files" 
+
+echo ' '
+echo ' '
+echo "Always use quotes"
