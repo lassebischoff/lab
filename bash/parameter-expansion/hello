@@ -1,0 +1,9 @@
+#!/bin/bash
+
+name="${1:-world}" # Set name to the first argument of the script to "world" if unset 
+log_level="${LOG_LEVEL:-info}" # Set log_level to "info" if empty
+echo "Hello, $name (log: $log_level)" # Print the contents of name ("world") and the log level
+
+
+# Running `./script` will return `Hello, World (log: info)`
+# Running `./script "Name"` will return `Hello, Name (log: info)`
