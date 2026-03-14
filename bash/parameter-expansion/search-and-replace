@@ -1,0 +1,14 @@
+#!/bin/bash
+
+text="Hello, world world"
+
+echo "The exmaple text is: ${text}"
+
+echo "The next line should read: Hello, my world"
+echo "${text/world/my}" # Replaces the first match "world" with "my"
+
+echo "The next line should read: Hello, Hello Hello"
+echo "${text//world/Hello}" # Replaces all matches "world" with "Hello"
+
+echo "The next line should read: Hello,worldword"
+echo "${text// /}" # Removes blanks
