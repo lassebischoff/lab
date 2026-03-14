@@ -1,0 +1,14 @@
+#!/bin/bash
+
+strA="StringA"
+strB=""
+
+# Check if the variables contain something
+echo 'Checking if the variables strA and strB are empty'
+[[ -n "$strA" ]] && echo 'The variable strA is not empty'
+[[ -z "$strB" ]] && echo 'the variable strB is empty' 
+
+# Test if the contents are equal or non-equal and return the respective exit codes
+echo 'Two lines of output should appear, if strA and strB are not equal!'
+[[ "$strA" == "$strB" ]] || echo 'The strings are not equal'
+[[ "$strA" != "$strB" ]] && echo 'The strings are not equal'

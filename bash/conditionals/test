@@ -1,0 +1,9 @@
+#!/bin/bash
+
+name="Hello"
+
+# Check if the content of the variable "name" is "Hello" via exit codes
+[[ "$name" == "Hello" ]]
+
+echo 'The next line should return 0'
+echo $?
