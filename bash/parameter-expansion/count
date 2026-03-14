@@ -1,0 +1,5 @@
+#!/bin/bash
+
+password="thisisapassword"
+
+echo "${#password}" # Counts the length of the variable content
