@@ -1,0 +1,11 @@
+#!/bin/bash
+
+file="archive.tar.gz"
+
+echo "The example archive is: $file"
+
+echo "${file#*.}" # Removes the filename
+echo "${file##*.}" # Removes the filename and first extension "tar"
+
+echo "${file%.*}" # Removes the last extension ".gz"
+echo "${file%%.*}" # Removes all extensions and online returns the filename
