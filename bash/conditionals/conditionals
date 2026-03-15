@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Test for zero-length or --help on the first argument and provide usage information about the script
+if [[ -z "$1" || "$1" == "--help" ]]; then
+	echo "Usage: $0 <filename>"
+	exit 1
+fi
+
 if [[ -f "$1" ]]; then # Test if a file with the name from the first argument exits
 	echo "It's a file!"
 elif [[ -d "$1" ]]; then # If no file is found, test if a directory with the name from the first argument exists
