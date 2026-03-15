@@ -1,0 +1,14 @@
+#!/bin/bash
+
+case $1 in
+	start) # Output a start command if the first argument is start
+		echo "Starting Service..."
+		;;
+	stop) # Output a stop command if the first argument is stop 
+		echo "Stopping Service..."
+		;;
+	*) # Provide usage information if no or wrong arguments are provided and stop the scipt execution
+		echo "Usage: $0 <start|stop>"
+		exit 1
+		;;
+esac
