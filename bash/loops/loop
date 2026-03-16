@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Prints a welcome message for 3 names by assiging them to the variable "myvar"
+for myvar in Alice Bob Charlie; do
+	echo "Hello, $myvar!"
+done
