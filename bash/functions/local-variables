@@ -1,0 +1,11 @@
+#!/bin//bash
+
+var="content-outside"
+
+this_function () {
+	local var="content-inside"
+	echo "Inside function: $var"
+}
+
+this_function
+echo "Outside function: $var"
