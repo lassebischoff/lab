@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# D3escription: returns all values from an array
+
+fruits=("apple" "banana" "kiwi")
+
+for fruit in "${fruits[@]}"; do
+	echo "I like ${fruit}s"
+done
