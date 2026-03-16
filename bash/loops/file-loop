@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Create 5 files
+for i in {1..5}; do
+	touch "file$i.txt"
+done
+
+# Check if files exist and continue
+for file in *.txt; do
+	[[ -f $file ]] || continue
+	echo "Processing: $file"
+done	
