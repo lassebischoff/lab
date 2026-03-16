@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Description: Defines an array for fruits and prints various postions of the array
+fruits=("apple" "banana" "kiwi")
+echo "The second fruit is a ${fruits[1]}" # Second position
+echo "All fruits are ${fruits[@]}" # All positions
+echo "We stored ${#fruits[@]} fruits" # The length of the array
