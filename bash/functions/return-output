@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Description: Print the extension of a file
+get_extension () {
+	local filename="$1"
+	echo "${filename##*.}" # Using a parameter expansion to cut the everything in front of the extension
+}
+
+ext=$(get_extension "doc.txt") # Give the value to the function get_extension and store it into a variable
+echo "$ext"
