@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Print all even numbers from 0 to 10
+echo "These numbers from 0 to 10 are even:"
+for i in {0..10..2}; do
+	echo "$i"
+done
