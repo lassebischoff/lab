@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Simple example backup script
+case "$1" in
+	create) echo "Creating backup..." ;;
+	restore) echo "Restoring backup..." ;;
+	list) echo "Listing backups..." ;;
+	*) echo "Usage: backup {create|restore|list}" ;;
+esac
